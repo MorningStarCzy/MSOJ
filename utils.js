@@ -1,8 +1,8 @@
 let supabaseClient = null;
 function getClient() {
     if (!supabaseClient) {
-        const supabaseUrl = 'SupaBase 项目地址';
-        const supabaseKey = 'SupaBase 匿名密钥';
+        const supabaseUrl = 'https://twdjyupsrvevkyqoksme.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR3ZGp5dXBzcnZldmt5cW9rc21lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE1Njc5MDIsImV4cCI6MjA3NzE0MzkwMn0.G79nX1xd8SGaV-mTSzn7kHPGcVZdQ8vcaRnm-pM4BQ0';
         supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
     }
     return supabaseClient;
